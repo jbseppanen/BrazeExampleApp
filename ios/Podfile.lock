@@ -1,5 +1,15 @@
 PODS:
   - boost (1.76.0)
+  - braze-react-native-sdk (2.0.2):
+    - BrazeKit (~> 5.9.1)
+    - BrazeLocation (~> 5.9.1)
+    - BrazeUI (~> 5.9.1)
+    - React-Core
+  - BrazeKit (5.9.1)
+  - BrazeLocation (5.9.1):
+    - BrazeKit (= 5.9.1)
+  - BrazeUI (5.9.1):
+    - BrazeKit (= 5.9.1)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.71.3)
@@ -420,6 +430,7 @@ PODS:
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
+  - "braze-react-native-sdk (from `../node_modules/@braze/react-native-sdk`)"
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
@@ -481,6 +492,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - BrazeKit
+    - BrazeLocation
+    - BrazeUI
     - CocoaAsyncSocket
     - Flipper
     - Flipper-Boost-iOSX
@@ -500,6 +514,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
+  braze-react-native-sdk:
+    :path: "../node_modules/@braze/react-native-sdk"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -569,6 +585,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
+  braze-react-native-sdk: c61760392f8554a6835d9cff34952e53c45f8ae6
+  BrazeKit: 7c8ab19c996bb6447d44a242c14778ad48c9e020
+  BrazeLocation: ba8da78df3221b627c56c4b2ad20df2e0795dfb4
+  BrazeUI: 39d905f9ded70b6ab9d8ab08d6cfdbbfed4cc282
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   FBLazyVector: 60195509584153283780abdac5569feffb8f08cc
